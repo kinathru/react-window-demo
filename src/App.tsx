@@ -4,6 +4,7 @@ import CountrySelectListWindowDemo from "./CountrySelectListWindowDemo";
 import { AppNavMenu } from "./AppNavMenu";
 import { Route, Routes } from "react-router-dom";
 import CountrySelectShadCnListWindow from "./CountrySelectShadCnListWindow";
+import CountrySelectComboBox from "./CountrySelectComoboBox";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
           <Route
             path="shadcn-react-window"
             element={<CountrySelectShadCnListWindow />}
+          ></Route>
+          <Route
+            path="shadcn-combo-box"
+            element={<CountrySelectComboBox />}
           ></Route>
         </Routes>
       </main>
