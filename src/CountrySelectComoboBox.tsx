@@ -23,8 +23,9 @@ const CountrySelectComboBox = () => {
               item.isoCode === selected.isoCode
             }
             itemToStringLabel={(country: ICountry) => country.name}
+            autoHighlight
           >
-            <ComboboxInput placeholder="Select a Country" />
+            <ComboboxInput placeholder="Select a Country" showClear />
             <ComboboxContent>
               <ComboboxEmpty>No items found.</ComboboxEmpty>
               <ComboboxList>
