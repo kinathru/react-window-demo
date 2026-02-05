@@ -16,21 +16,25 @@ function RowComponent({
   );
 }
 
-const ListWindowDemo = () => {
+const CountrySelectListWindowDemo = () => {
   const names = Country.getAllCountries().map(
     (c) => `${c.name} [${c.isoCode}]`,
   );
 
   return (
-    <div className="flex flex-col max-h-50 border w-full p-4">
-      <List
-        rowComponent={RowComponent}
-        rowCount={names.length}
-        rowHeight={25}
-        rowProps={{ names }}
-      ></List>
+    <div className="max-w-7xl mx-auto p-10">
+      <div className="flex justify-center mb-5">
+        <div className="flex flex-col max-h-50 border w-full p-4">
+          <List
+            rowComponent={RowComponent}
+            rowCount={names.length}
+            rowHeight={25}
+            rowProps={{ names }}
+          ></List>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default ListWindowDemo;
+export default CountrySelectListWindowDemo;

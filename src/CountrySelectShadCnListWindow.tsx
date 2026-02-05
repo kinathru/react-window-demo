@@ -9,9 +9,8 @@ import {
 } from "@/components/ui/select";
 import { Country } from "country-state-city";
 
-const CountrySelectShadCn = () => {
+const CountrySelectShadCnListWindow = () => {
   const countries = Country.getAllCountries();
-
   return (
     <>
       <div className="max-w-7xl mx-auto p-10">
@@ -39,4 +38,4 @@ const CountrySelectShadCn = () => {
   );
 };
 
-export default CountrySelectShadCn;
+export default CountrySelectShadCnListWindow;
