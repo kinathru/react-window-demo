@@ -5,6 +5,8 @@ import { AppNavMenu } from "./AppNavMenu";
 import { Route, Routes } from "react-router-dom";
 import CountrySelectShadCnListWindow from "./CountrySelectShadCnListWindow";
 import CountrySelectComboBox from "./CountrySelectComoboBox";
+import ShadCnFormWithCombobox from "./ShadCnFormWithCombobox";
+import ShadCnCommandDemo from "./ShadCnCommandDemo";
 
 function App() {
   return (
@@ -28,6 +30,14 @@ function App() {
           <Route
             path="shadcn-combo-box"
             element={<CountrySelectComboBox />}
+          ></Route>
+          <Route
+            path="shadcn-combo-box-form"
+            element={<ShadCnFormWithCombobox />}
+          ></Route>
+          <Route
+            path="shadcn-command-demo"
+            element={<ShadCnCommandDemo />}
           ></Route>
         </Routes>
       </main>
