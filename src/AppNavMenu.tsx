@@ -47,6 +47,11 @@ const components: { title: string; href: string; description: string }[] = [
     href: "/shadcn-command-demo",
     description: "ShadCN Command Demo",
   },
+  {
+    title: "ShadCN ComboBox Virtualized",
+    href: "/shadcn-virtualized-combobox",
+    description: "ShadCN Virtualized Combobox Implementaiton Example",
+  },
 ];
 
 export function AppNavMenu() {

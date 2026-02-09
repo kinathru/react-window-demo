@@ -7,6 +7,17 @@ import CountrySelectShadCnListWindow from "./CountrySelectShadCnListWindow";
 import CountrySelectComboBox from "./CountrySelectComoboBox";
 import ShadCnFormWithCombobox from "./ShadCnFormWithCombobox";
 import ShadCnCommandDemo from "./ShadCnCommandDemo";
+import { ShadcnVirtualizedCombobox } from "./ShadcnVirtualizedCombobox";
+
+function generateItems() {
+  const items: string[] = [];
+  for (let i = 1; i <= 20000; i++) {
+    items.push(`item ${i}`);
+  }
+  return items;
+}
+
+const initialOptions: string[] = generateItems();
 
 function App() {
   return (
@@ -38,6 +49,10 @@ function App() {
           <Route
             path="shadcn-command-demo"
             element={<ShadCnCommandDemo />}
+          ></Route>
+          <Route
+            path="shadcn-virtualized-combobox"
+            element={<ShadcnVirtualizedCombobox options={initialOptions} />}
           ></Route>
         </Routes>
       </main>
